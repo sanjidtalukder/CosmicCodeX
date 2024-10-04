@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this is an global worming project" />
+    <title>global</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+     
+      /*resat code and common style start here */
+      :root {
+        --primary-color: rgb(11, 181, 48);
+        --secondary-color: rgba(36, 122, 55, 0.9);
+        --padding: 0.5rem;
+        --transitioin: all 0.3s;
+        --border-radius: 0.6rem;
+        --box-shadow: 0.1rem 0.2 rem 0.8rem rgba(205, 202, 202, 0.5);
+      }
+      * {
+        box-sizing: border-box;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        text-decoration: none;
+      }
+      p {
+        padding: 0.5rem;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        /* background: url("image/cccc.webp") no-repeat center center/cover;*/
+        width: 100%;
+        height: auto;
+      }
+
+      main {
+        background-color: #F8F0E3;
+        font-size: 1.3rem;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .flex-space-around {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      /*resat code and common style start here */
+
+      /*navbar style start here*/
+      nav {
+        font-family: fantasy;
+        font-size: 1.5rem;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 100;
+      }
+      .nav-upper {
+        min-height: 6.5vh;
+        background-color: #5C8D89;
+        padding: 0.5rem;
+      }
+      .nav_list {
+        transition: var(--transitioin);
+      }
+      .nav_list:hover {
+        text-decoration: underline;
+        color: black;
+      }
+      .nav_link {
+        color: #F8F8F8;
+        transition: var(--transitioin);
+      }
+      .nav_link:hover {
+        color: black;
+      }
+      .nav-lower {
+        /* min-height: 6.5vh;*/
+        
+        background-color: #05524c;
+        font-size: 1.5rem;
+      }
+      .nav_brand {
+        font-size: 1.5rem;
+      }
+      /*navbar style end here*/
+
+      /*pic1 style start here*/
+
+      /* .climaAction {
+        background: url("image/cccc.webp") no-repeat center center/cover;
+        padding: 0;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+      }
+      .climaAction h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        position: absolute;
+        margin-top: 140px;
+        color: white;
+      } */
+
+      /*loging form*/
+
+      .climateAction {
+    background-image: url('image/impect.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px; 
+}
+
+.wrapper  {
+    display: flex;
+    justify-content: space-between;
+    color: #F2F2F2;
+    align-items: center;
+    width: 80%;
+    height:400px ;
+    margin: 0 auto;
+   
+}
+
+ .wrapper2 {
+
+ 
+  color: #F2F2F2;
+  align-items: end;
+  width: 80%;
+  margin: 0 auto;
+} 
+
+
+      /* .form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        border: 1px solid black;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: inset --5px --5px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+        padding: 1rem;
+      }
+
+      .form h1 {
+        color: white;
+        font-size: 2rem;
+        border-bottom: 4px solid rgba(225, 255, 255, 0.5);
+        margin-top: 50px;
+      } */
+
+
+
+/*search bar start here*/
+      .search-bar{
+        background-color:gray;
+        width: 90%;
+        height: auto;
+        max-width: 600px;
+        display: flex;
+        padding: 1px;
+        border-radius: 100%;
+    }
+    #select{
+        background-color: #160053;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: gray;
+        width: 300px;
+        padding: 25px 20px;
+        cursor: pointer;
+        position: relative;
+        border-radius: 4px;
+    }
+    #select img{
+        width: 20px;
+    }
+    
+    #select ul{
+        position: absolute;
+        top: 120%;
+        left: 0;
+        list-style: none;
+        background-color: gray;
+        color: white;
+        width: 100%;
+        border-radius: 6px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    
+    #select ul li{
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    #select ul li:hover{
+      color: blue;
+    }
+    .search-bar input{
+        padding: 10px 25px;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 18px;
+    }
+    
+    #select ul.open{
+        max-height: 300px;
+    }
+
+/*search bar end here*/
+      /* Boxes */
+      .box {
+        padding: 12px;
+        margin: 20px;
+        width: 90%;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: inset --3px --3px rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 1rem;
+      }
+
+      /* #submit {
+        padding: 10px 20px;
+        margin-top: 50px;
+        width: 25%;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: inset -3px -3px rgba(0, 0, 0, 0.5);
+        color: white;
+        outline: none;
+        border-radius: 20px;
+        font-size: 1rem;
+      } */
+/* 
+      #submit:hover {
+        cursor: pointer;
+        background-color: rgba(225, 255, 255, 0.1);
+        color: white;
+      }
+
+      ::placeholder {
+        color: white;
+        opacity: 0.7;
+      }
+      .form:hover {
+        cursor: pointer;
+        background: rgba(225, 255, 255, 0.1);
+        transform: scale(1.03);
+      } */
+      .climaAction::after {
+        content: "";
+        clear: both;
+      }
+
+      /*pic1 style end here*/
+
+      /*all text style start here*/
+      .text-of-GLOTI {
+        text-align: center;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 100px;
+        padding: 0;
+        margin: auto;
+      }
+
+      
+        
+      
+      .text-bangladesh {
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid black;
+        background-color: gray;
+        padding: 0;
+        margin: auto;
+      }
+
+      /*all text style end here*/
+
+     .globaltem{
+      display: flex;
+      padding: 0;
+      margin: auto;
+      
+     }
+.globaltem pre{
+  flex: 4;
+  padding: 0;
+}
+
+      #curve_chart {
+      text-align: left;
+        padding: 2.5px;
+        margin: auto;
+        box-sizing: border-box;
+        border: 2px solid#F8F8F8;
+        border-radius: 5px;
+        transition: 600ms;
+      }
+      
+      #curve_chart:hover {
+        background: rgb(111, 225, 130, 1);
+        transform: scale(1.03);
+      }
+      #curve_chart::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+.temparature-mp4{
+  text-align: center;
+}
+/* #columnchart_material{
+  text-align: right;
+} */
+.text-of-GLCDI {
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 100px;
+  padding: 0;
+  margin: auto;
+}
+
+.globaltem-carbonMethan{
+  display: flex;
+  padding: 0;
+  margin: auto;
+}
+#columnchart_material{
+  padding: 2px;
+  margin: auto;
+}
+
+.text-of-sea-lavel {
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 100px;
+  padding: 0;
+  margin: auto;
+}
+
+.globaltem-sea-level{
+  display: flex;
+  padding: 0;
+  margin: auto;
+}
+      /*pic2 style start here*/
+      .map-of-bangladesh h2 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .map-of-bangladesh {
+        height: auto;
+        width: 350px;
+        padding: 2px;
+        margin: auto;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 5px;
+        transition: 600ms;
+      }
+      .map-of-bangladesh:hover {
+        background: rgb(111, 225, 130, 1);
+        transform: scale(1.03);
+      }
+
+      .map-of-bangladesh::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      /*pic2 style end here*/
+
+      /*challenge div style start here*/
+      .challenge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 900;
+        width: auto;
+      }
+
+      .challenge img {
+        width: 45%;
+        height: 35%;
+        border: 2px solid black;
+        border-radius: 13px;
+        box-shadow: 4px 7px 7px 0px;
+        cursor: pointer;
+        margin: 10px;
+        transition: 400ms;
+      }
+
+      .challenge img:hover {
+        background: rgb(111, 225, 130, 1);
+        transform: scale(1.03);
+      }
+      /*challenge div style end here*/
+
+      .text-of-CCDC {
+        text-align: center;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 100px;
+        padding: 0;
+        margin: auto;
+      }
+
+      
+      .text-of-DCDC {
+        text-align: center;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 100px;
+        padding: 0;
+        margin: auto;
+      }
+
+      /*piechart div style start here*/
+      #piechart {
+        padding: 2px;
+        margin: auto;
+        justify-content: center;
+        border: 2px solid black;
+        border-radius: 13px;
+        box-shadow: 4px 7px 7px 0px;
+        cursor: pointer;
+        transition: 400ms;
+      }
+      #piechart:hover {
+        background: rgb(111, 225, 130, 1);
+        transform: scale(1.03);
+      }
+      /*piechart div style end here*/
+
+      /*chart div style start here*/
+      #chart_div {
+        padding: 2px;
+        margin: auto;
+        justify-content: center;
+        border: 2px solid black;
+        border-radius: 13px;
+        box-shadow: 4px 7px 7px 0px;
+        cursor: pointer;
+        transition: 400ms;
+      }
+      #chart_div:hover {
+        background: rgb(111, 225, 130, 1);
+        transform: scale(1.03);
+      }
+
+      /*chart div style end here*/
+
+      /*challenge-deforestation div style start here*/
+      .challenge-deforestation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+      }
+
+      #donutchart {
+        padding: 2px;
+        margin: auto;
+        justify-content: center;
+        border: 2.5px solid black;
+        border-radius: 13px;
+        box-shadow: 4px 7px 7px 0px;
+        cursor: pointer;
+        transition: 400ms;
+      }
+      #donutchart:hover {
+        background: rgb(111, 225, 130, 1);
+        transform: scale(1.03);
+      }
+
+      /*challenge-deforestation div style end here*/
+
+      /*chartSit div style start here*/
+      #chartSitdiv {
+        padding: 2px;
+        margin: auto;
+        justify-content: center;
+        border: 2px solid black;
+        border-radius: 13px;
+        box-shadow: 4px 7px 7px 0px;
+        cursor: pointer;
+        transition: 400ms;
+      }
+      #chartSitdiv:hover {
+        background: rgb(111, 225, 130, 1);
+        transform: scale(1.03);
+      }
+      /*chartSit div style start here*/
+
+      /*footer start heere*/
+      .footer {
+        background-color: var(--primary-color);
+        padding: 0.2rem;
+        min-height: 0.5vh;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      /*footer start heere*/
+
+      @media (max-width: 992px) {
+        .flex-space-around {
+          flex-direction: column;
+          gap: 1rem;
+          padding: 1rem 0;
+        }
+        @media (max-width: 768px) {
+          
+         
+        }
+
+        @media (max-width: 600px) {
+         
+        }
+        @media (max-width: 350px) {
+        }
+      }
+    </style> 
+
+    <!--js start heare-->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+
+
+
+    <script type="text/javascript">
+
+//search bar start heare
+
+
+
+//search bar end here
+
+      //Global Land-ocean Temperature Index start heare
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawCharts);
+
+      function drawCharts() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Lowess smoothing Tem.(C)', 'Annual mean Tem(C)'],
+          ['2019',  0.98,      0.93],
+          ['2020',  1.01,      0.95],
+          ['2021',  0.85,       0.97],
+          ['2022',  0.90,      0.99],
+          ['2023',  1.17,    1.01]
+        ]);
+
+        var options = {
+          title: 'Global Land-ocean Temperature Index',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+
+//Global Land-ocean Temperature Index end heare
+
+
+//Ice level start heare 
+google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawBackgroundColorS);
+
+function drawBackgroundColorS() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'X');
+      data.addColumn('number', 'Antartica mass(Gt)');
+
+      data.addRows([
+           [2015,-1786],  [2016, -1856],  [2017, -1637],  [2018, -1989],  [2019, -2375],
+        [2020, -2642],  [2021, -2791],  [2022, -2684],  [2023, -2379],  [2024, -2771]
+         
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'Year'
+        },
+        vAxis: {
+          title: 'Antartica mass(Gt)'
+        },
+        backgroundColor: '#f1f8e9'
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chartice_div'));
+      chart.draw(data, options);
+    }
+
+//ice level end heare 
+
+//Corbon dioxide mithen start heare
+google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'CO2 ppm' , 'CH4 ppb' ,],
+          ['2020', 413.59  , 1873.17,],
+          ['2021', 415.49, 1889.49,],
+          ['2022', 418.13, 1907.47,],
+          ['2023', 419.99, 1922.56,],
+          ['2024',422.80,1930.21]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Carbon Dioxide & Methane (parts per billion)',
+            subtitle: 'Year: 2020-2023',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+
+//Corbon dioxide mithen end heare
+
+
+//Global greenhouse gas emmission by Methane gas,DHAKA start here
+
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawDataChart);
+
+      function drawDataChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Task", "Hours per Day"],
+          ["Stationary Energy", 20],
+          ["Transportation", 30],
+          ["Water", 40],
+        ]);
+
+        var options = {
+          title: "Global greenhouse gas emmission by Methane gas,DHAKA",
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("piechart")
+        );
+
+        chart.draw(data, options);
+      }
+
+      //Global greenhouse gas emmission by Methane gas,DHAKA  end heare
+
+      //Sea level start here
+
+
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawSeaChart);
+      function drawSeaChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['2023 Year',     1.01],
+          ['2022 Year',      0.99],
+          ['2021 Year',  0.97],
+          ['2020 Year', 0.95],
+          ['2019 Year',    0.93],
+          ['2018 year', 0.93]
+        ]);
+
+        var options = {
+          title: 'Global sea level (2023-2018)',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+
+      //Sea level end here
+//Methane Emissions(Million Metrik Tons),DHAKA start heare
+
+google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawLineChart);
+      function drawLineChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Task", "Hours per Day"],
+          ["2023 Year", 280],
+          ["2021 Year", 200],
+          ["2019 Year", 120],
+          ["2017 Year", 400],
+          ["2015 Year", 75],
+          ["2013 Year", 65],
+          ["2011 Year", 280],
+          ["2009 Year", 200],
+          ["2007 Year", 310],
+          ["2007 Year", 270],
+          ["2003 Year", 60],
+          ["2001 Year", 280],
+        ]);
+
+        var options = {
+          title: "Methane Emissions(Million Metrik Tons),DHAKA",
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("donutchart")
+        );
+        chart.draw(data, options);
+      }
+
+       //Methane Emissions(Million Metrik Tons),DHAKA end heare
+
+
+
+
+      //Methane Emissions(Million Metrik Tons),CHITTAGONG  start here
+
+      google.charts.load("current", { packages: ["corechart", "line"] });
+      google.charts.setOnLoadCallback(drawMyBasics);
+
+      function drawMyBasics() {
+        var data = new google.visualization.DataTable();
+        data.addColumn("number", "X");
+        data.addColumn("number", "Dogs");
+
+        data.addRows([
+          [0, 0],
+          [1, 0],
+          [2, 6.0],
+          [3, 2.2],
+          [4, 2.1],
+          [5, 3.0],
+          [6, 6.3],
+          [7, 2.4],
+          [8, 2.1],
+          [9, 4.5],
+          [10, 2.1],
+          [11, 2.2],
+          [12, 2.4],
+          [13, 1],
+          [14, 4.2],
+          [15, 2],
+          [16, 3.8],
+          [17, 4],
+          [18, 3.2],
+          [19, 3.9],
+          [20, 4.5],
+          [21, 3],
+          [22, 3],
+          [23, 7.0],
+        ]);
+
+        var options = {
+          hAxis: {
+            title: "Year",
+          },
+          vAxis: {
+            title: "Methane Emissions(Million Metrik Tons),CHITTAGONG",
+          },
+        };
+
+        var chart = new google.visualization.LineChart(
+          document.getElementById("charted_div")
+        );
+        chart.draw(data, options);
+      }
+//Methane Emissions(Million Metrik Tons),CHITTAGONG  end heare
+      
+
+      
+
+      //Methane Emissions(Million Metrik Tons),BANGLADESH start heare
+
+      //piechart 4 start heare
+
+      google.charts.load("current", { packages: ["corechart", "line"] });
+      google.charts.setOnLoadCallback(drawSeetBasic);
+
+      function drawSeetBasic() {
+        var data = new google.visualization.DataTable();
+        data.addColumn("number", "Year");
+        data.addColumn("number", "Methane Emission");
+
+        data.addRows([
+          [0, 0],
+          [20, 1],
+          [22, 1.5],
+          [25, 2],
+          [27, 2.5],
+          [30, 3.5],
+          [32, 4],
+          [35, 5],
+          [37, 5.5],
+          [40, 7],
+        ]);
+
+        var options = {
+          hAxis: {
+            title: "Year",
+          },
+          vAxis: {
+            title: "Methane Emissions(Million Metrik Tons),BANGLADESH",
+          },
+        };
+
+        var chart = new google.visualization.LineChart(
+          document.getElementById("chartSitdiv")
+        );
+        chart.draw(data, options);
+      }
+      // //Methane Emissions(Million Metrik Tons),BANGLADESH start heare end heare
+
+    </script>
+    <!--js end heare-->
+  </head>
+  <body>
+    <!--Navbar start heare-->
+
+    <nav>
+      <ul class="nav-upper flex-space-around">
+        <li class="nav_list">
+          <a href="index.html" class="nav_link">Home</a>
+        </li>
+        <li class="nav_list">
+          <a href="blogAbout.html" class="nav_link">Blog About</a>
+        </li>
+        <!-- Repeat similar updates for other menu items -->
+
+        <li class="nav_list">
+          <a href="satteliteView.html" class="nav_link">Sattelite View </a>
+        </li>
+        <li class="nav_list">
+          <a href="prediction.html" class="nav_link">Prediction</a>
+        </li>
+        <li class="nav_list">
+          <a href="explore.html" class="nav_link">Explore</a>
+        </li>
+      </ul>
+      <ul class="nav-lower flex-space-around">
+        <li  class="nav_list" >
+          <a href="/index.html" class="nav_brand nav_link" style="color: #F8F8F8">Climate Change</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Navbar end heare-->
+
+    <!--main start heare-->
+
+    <main>
+
+        <div class="climateAction">
+            <div class="wrapper">
+                <h3>
+                    <b style="color:#FFC000; font-size: 2rem">ClimaAction</b
+                    ><br />
+                    Analysis all about scenario, <br />prediction, exploration
+                </h3>
+                
+                <!-- <div class="wrapper">   -->
+                    <!-- <form action="" class="form">
+                    <h1>LOGIN</h1>
+                    <input
+                      type="email"
+                      name="email"
+                      class="box"
+                      placeholder="Enter Username"
+                    />
+                    <input
+                      type="password"
+                      name="password"
+                      class="box"
+                      placeholder="Enter Password"
+                    />
+                    <input type="submit" value="Submit" id="submit" />
+                  </form> </div> -->
+            <div class="container">
+                    <div class="search-bar">
+                        <div id="select">
+                            <p id="selectText">Home</p>
+                            <img src="image/arrow-removebg-preview.png">
+                            <ul id="list">
+                                <li class="options">Home</li>
+                                <li class="options" >Select Region</li>
+                                <li class="options">Tracking GHG</li>
+                                <li class="options">Source of GHG</li>
+                               
+                            </ul>
+                        </div>
+                        <input type="text" id="inputfield" placeholder="Search in all Catragoris">
+                    </div>
+                    </div>
+                
+            </div>
+            </div><br/>
+        </div><br/>
+      <!--climaAction start heare-->
+      <!-- <div class="climaAction">
+        <h3>
+          <b style="color: rgb(255, 253, 208); font-size: 2rem">ClimaAction</b
+          ><br />
+          Analysis all about scenario, <br />prediction, exploration
+        </h3>
+        <form action="" class="form">
+          <h1>LOGIN</h1>
+          <input
+            type="email"
+            name="email"
+            class="box"
+            placeholder="Enter Username"
+          />
+          <input
+            type="password"
+            name="password"
+            class="box"
+            placeholder="Enter Password"
+          />
+          <input type="submit" value="Submit" id="submit" />
+        </form> 
+      </div> 
+      <br />
+      climaAction end heare-->
+
+      <!--text-bangladesh start heare-->
+      
+    <!-- <h1 style="padding: 2px ;">GLOBAL LAND-OCEAN TEMPERATURE INDEX</h1>
+    <h2 style="padding: 2px ;">Global Temperature</h2>
+      <h4 style="color: red; padding: 2px;">LATEST ANNUAL AVERAGE ANOMALY: 2023 </h4>
+     <h1 style="padding: 2px;">1.17 °C 2.11 °F</h1> 
+    <p>Data source: NASA's Goddard Institute for Space Studies (GISS).</p>
+      <p>Credit: NASA/GISS</p> -->
+
+      <div class="text-of-GLOTI">
+        <h1>GLOBAL LAND-OCEAN TEMPERATURE INDEX</h1>
+      </div>
+      <P><b>Key point:</b><br/>
+        Earth was about 2.45 degrees Fahrenheit (or about 1.36 degrees Celsius) <br/>
+        warmer in 2023 than in the late 19th-century (1850-1900) preindustrial average.<br/> 
+        The 10 most recent years are the warmest on record.<br/>
+        The combined land and ocean temperature has increased at an average rate of 0.11°F (0.06°C) per decade since 1850.<br/>
+        However, since 1982, the rate of warming has accelerated to 0.36°F (0.20°C) per decade.<br/>
+      <div class="globaltem">
+    <pre>
+ <h4>  GLOBAL LAND-OCEAN TEMPERATURE INDEX</h4> 
+<h4 style="color: red;">  Global Temperature</h4>
+  LATEST ANNUAL AVERAGE ANOMALY: 2023 
+  <h1>  1.17°C  2.11°F</h1>
+  <p style="color: blue;">  Data source:NASA's Goddard Institute for Space Studies (GISS)</p>
+ </pre>  
+     <div id="curve_chart" style="width: 550px; height: 350px" ></div>
+  </div><br/> 
+
+ 
+  <div class="temparature-mp4">
+    <video controls  style="width: 900px;height: 350px;">
+      <source src="image/climate.mp4">
+    </video></div><br/>
+
+   
+    <div class="text-of-GLCDI">
+          <h1>GLOBAL ICE SHEETS</h1>
+        </div>
+        <P><b>Key point:</b><br/>
+          Antarctica and Greenland are home to massive ice sheets. These ice sheets store about two-thirds of all the fresh water on Earth. <br/>
+           That’s an incredible amount!<br/>
+Unfortunately, both Antarctica and Greenland have been losing ice mass since 2002.<br/>
+ Here are the numbers:
+Antarctica: It’s losing ice at an average rate of about 150 billion tons per year .<br>
+Greenland: It’s losing about 270 billion tons per year .<br/>
+</P>
+          
+    <div class="globaltem">
+     <div id="chartice_div" style="width: 950px; height: 350px" ></div>
+     <pre>
+      <h4>       GLOBAL ICE SHEETS INDEX</h4> 
+     <h4 style="color: red;">       Global Ice Sheets</h4>
+      Contionusly Increase
+       <h1>    139</h1>
+       billio metric tons per year since 2002
+<p style="color: blue;">      Data source:NASA's Goddard Institute for Space Studies (GISS)</p>
+           </pre>  
+    </div><br/>
+<!-- see lavel start -->
+
+<div class="text-of-sea-lavel">
+  <h1>GLOBAL   SEA   LEVEL</h1>
+</div>
+<P><b>Key point:</b><br/>
+  Global sea levels are rising as a result of human-caused global warming,<br/>
+  with recent rates being unprecedented over the past 2,500-plus years.<br/>
+  The annual rate of sea level rise has increased significantly:<br/>
+  In 1993, it was about 0.08 inches/year (0.20 centimeters/year).<br/>
+  Currently, the yearly rate is approximately 0.17 inches/year (0.44 centimeters/year).
+</P>
+  
+<div class="globaltem-sea-level">
+<pre>
+
+<h4> GLOBAL SEA LEVEL INDEX</h4> 
+  <h4 style="color: red;"> Global sea level</h4>
+Contionusly Increase
+   <h2>  105 mm</h2>
+<p style="color: blue;">Data source:NASA's Goddard Institute for Space Studies (GISS)</p>
+       </pre>  
+<div id="piechart_3d" style="width: 950px; height: 350px;"></div>
+
+</div><br/>
+
+<!--Global land-ocean caebon dioxide & methane start here-->
+
+    <div class="text-of-GLCDI">
+      <h1>GLOBAL LAND-OCEAN CARBON DIOXIDE & METHANE  </h1>
+    </div>
+    
+    
+      <p><b>Key point(Carbon Dioxide):</b><br/>
+        Carbon dioxide in the atmosphere warms the planet, causing climate change. <br/>
+        Human activities have raised the atmosphere’s carbon dioxide content by 50% in less than 200 years.<br/>
+        If carbon dioxide were removed, the terrestrial greenhouse effect would collapse, and Earth’s surface temperature 
+        would drop significantly, by approximately 33°C (59°F).
+      </p>
+        <p><b>Key point(Methan):</b><br/>
+          Methane is a powerful heat-trapping gas.<br/> 
+          An estimated 60% of today’s methane emissions are the result of human activities.<br/>
+          A molecule of methane traps more heat than a molecule of CO2, but methane has a relatively 
+          short lifespan of 7 to 12 years in the atmosphere,<br/> while CO2 can persist for hundreds of years or more.
+          </p>
+          
+        <div class="globaltem-carbonMethan">
+          <div id="columnchart_material" style="width: 950px; height: 350px;  "></div>
+          <pre><h3 style="color:blue;">      Carbon Dioxide</h3>
+        Latest Measurement : July 2024
+           <h2>     426 ppm</h2>
+        (Should be maximum:350 ppm)
+
+           <h3 style="color: red;">       Methane</h3>
+         Latest Measurement : February 2024
+           <h2>      1929 ppb</h2>
+        (Should be maximum:1000 ppb)<br/>
+        <p style="color: blue;">       Data source:NASA's Goddard Institute for Space Studies (GISS)</p></pre>  
+         </div><br/>
+     </div><br/>
+
+<!--Global land-ocean caebon dioxide & methane end here-->
+
+   
+      <!-- <div id="curve_chart" style="width: 900px; height: 500px"></div> -->
+
+
+<!--text-bangladesh start heare-->
+
+      <!-- <div class="text-bangladesh">
+        <h1>PREDICTION OF BANGLADESH</h1>
+      </div>
+      <p>
+        The adverse effects of climate change on Bangladesh are alarming. Rising
+        sea levels threaten to displace millions, damaging homes, agriculture,
+        and infrastructure. Intense cyclones, heatwaves, and droughts will
+        strain resources and reduce crop yields, while soil salinization will
+        worsen food insecurity. Large-scale displacement could lead to
+        overcrowded cities and social instability. Without urgent adaptation,
+        Bangladesh faces severe environmental, economic, and social challenges.
+      </p>
+      <div class="map-of-bangladesh">
+        <h2>bangladesh</h2>
+        <img src="image/mapbds.jpg" alt="map of bangladesh" />
+      </div>
+      <br />
+      text-bangladesh end heare -->
+
+
+      <!--climate change page start heare-->
+      <div class="text-of-CCDC">
+        <h1>DETECTING METHANE PLUMES</h1>
+      </div>
+      <p>
+        The mission’s study area coincides with known methane hotspots around the world,<br/>
+        enabling researchers to look for the gas in those regions to test the capability of the imaging spectrometer.<br/>
+
+The cube (left) shows methane plumes (purple, orange, yellow) over Turkmenistan. <br/>The blue line in the graph (right) shows the methane fingerprint EMIT detected;<br/> the red line is the expected fingerprint based on an atmospheric simulation.<br/>
+The cube (left) shows methane plumes (purple, orange, yellow) over Turkmenistan. <br>The rainbow colors are the spectral fingerprints from corresponding spots in the front image.<br/> The blue line in the graph (right) shows the methane fingerprint EMIT detected; the red line is the expected fingerprint based on an atmospheric simulation.<br/>
+<p style="color: blue;">Credits: NASA/JPL-Caltech</p>
+      </p>
+      <!--pai chat  page start heare-->
+      <div class="challenge">
+       
+        <img src="image/DETACTIVE EFFECT.jpg" alt="map of methan" />
+        <!--pai chat  page end heare-->
+      </div>
+      <br />
+
+      <!--climate change page end heare-->
+
+      <!--deforastation  page start heare-->
+      <!--<div class="text-of-DCDC">
+        <h1>DEFORESTATION OF DHAKA & CHITTAGONG</h1>
+      </div>
+      <br />
+      <!-pai chat  page start heare-->
+      <!-- <div class="challenge-deforestation">
+        <div id="donutchart" style="width: 550px; height: 350px"></div>
+        <div id="charted_div" style="width: 550px; height: 350px"></div>
+        <!-pai chat  page start heare-->
+      <!-- </div>
+      <br /><br />  -->
+
+      <!--deforastation  page end heare-->
+
+      <!--banglades  page start heare-->
+      <!-- <div class="challenge-deforestation2">
+        <h1><u> Project Methane Emission In Bangladesh (2020-2040)</u></h1>
+        <br />
+        <div id="chartSitdiv" style="width: 700px; height: 350px"></div>
+      </div>
+      <br /><br /> -->
+
+      <!--bangladesh  page end heare-->
+    </main>
+    <!--main end heare-->
+
+    <!--footer start here-->
+    <footer class="footer">
+      <div>
+        <label for="welcome">Thank you</label>
+      </div>
+      <div>
+        <p>©copyright 2024</p>
+      </div>
+    </footer>
+    <!-- <script src="works.js"></script> -->
+
+    <!--Java style here-->
+    <script>
+      let select=document.getElementById("select");
+    let list=document.getElementById("list");
+    let selectText=document.getElementById("selectText");
+    let inputfield=document.getElementById("inputfield");
+    let options=document.getElementsByClassName("options");
+    
+    select.onclick=function(){
+        list.classList.toggle("open");
+    }
+    for(option of options){
+    option.onclick=function(){
+        selectText.innerHTML=this.innerHTML;
+        inputfield.placeholder= "Search In "+  selectText.innerHTML;
+    }
+    }
+    
+    </script>
+ <!--java style end here-->
+    <!--footer end here-->
+  </body>
+</html>
